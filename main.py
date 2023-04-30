@@ -68,7 +68,7 @@ def json_maker():
     description = input("\nEnter what you want the mod's description to be: ")
     mod_version = input("\nEnter the version of the mod: ")
     game_version = input("\nEnter what version of the game this is for (current version is 1.26.6): ")
-    thumbnail = input("\nEnter the filename of the thumbnail: ")
+    thumbnail = input("\nEnter the name of the file, including the file extension, that you want to be the thumbnail for your mod (you need to add this yourself): ")
     print("\nCreating mod.json...")
 
     # Writing the file
@@ -104,12 +104,8 @@ def main():
             json_maker()
         elif make_stuff == 'q':
             done = True
-            print("\nThanks for using this silly little program! Add the folder you created to your Mods folder and enjoy your new mod!")
+            print("\nThanks for using this silly little program!")
         else:
             print("\nNot a recognized input")
-        quit = input("\nEnter q to quit or anything else to continue: ")
-        if quit == 'q':
-            done = True
-            print("\nThanks for using this silly little program!")
 
 main()
